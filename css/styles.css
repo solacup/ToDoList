@@ -1,4 +1,9 @@
 @import "reset.css";
+@import "index.css";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #f2f2f2;
