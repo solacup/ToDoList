@@ -10,7 +10,7 @@ function checkInfo() {
 
   if (currentUser !== null && currentTheme !== null) {
     if (location.href === indexPage)
-      location.href = "../html/toDo.html";
+      location.href = "./html/toDo.html";
   } else {
     if (location.href === toDoPage) location.href = "../index.html";
   }
