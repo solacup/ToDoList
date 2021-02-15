@@ -66,7 +66,7 @@ function handleConfirmClick() {
 function handleCheckClick() {
   hiddenElement(checkContainer);
   setTimeout(function () {
-    location.href = "../html/toDo.html";
+    location.href = "./html/toDo.html";
   }, 1100);
 }
 
