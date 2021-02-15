@@ -6,16 +6,52 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <script src="../js/checkInfo.js"></script>
+    <script
+      src="https://kit.fontawesome.com/3ba764b9f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>ToDoList</title>
   </head>
-  <body>
-    <div class="clock">
-      <h1 class="clock-title">00:00</h1>
+  <body id="toDo">
+    <div class="menu-bar">
+      <div class="menu-icon">
+        <button>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+      </div>
+      <div class="clock">
+        <div class="clock-title">00:00</div>
+      </div>
+      <div class="user">name</div>
     </div>
-    <form action="" class="js-form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <script src="../js/clock.js"></script>
-    <script src="../js/greeting.js"></script>
+    <div class="screen">
+      <form class="todoForm">
+        <input
+          type="text"
+          class="todoInput"
+          placeholder="Wirte a todo"
+          required
+        />&nbsp;
+        <button type="submit">
+          <i class="far fa-caret-square-down"></i>
+        </button>
+      </form>
+      <div class="day">00.00</div>
+      <div class="toDoList">
+        <div class="toDoList__not">
+          <h3 class="toDoList__title">Not Yet</h3>
+          <ul class="toDoList__list" id="not-toDoList"></ul>
+        </div>
+        <div class="toDoList__done">
+          <h3 class="toDoList__title">Done</h3>
+          <ul class="toDoList__list" id="done-toDoList"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="../js/menu.js"></script>
+    <script src="../js/day.js"></script>
+    <script src="../js/createToDo.js"></script>
   </body>
 </html>

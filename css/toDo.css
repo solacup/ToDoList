@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap");
+
+#toDo {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff3e6;
+  font-family: "Jua", sans-serif;
+}
+
+.menu-bar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8%;
+  padding: 2%;
+  color: #fbfffe;
+  font-size: 1.5rem;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.menu-icon button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon button i {
+  pointer-events: none;
+  color: #fbfffe;
+  font-size: 1.7rem;
+}
+
+.menu-icon a i {
+  pointer-events: none;
+}
+
+.screen {
+  padding-top: 5rem;
+  height: 100%;
+}
+
+.todoForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.todoInput {
+  background-color: inherit;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+#toDo button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  font-size: 3rem;
+  color: #6d676e;
+}
+
+.day {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.toDoList {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  margin-top: 2rem;
+  padding: 0 3rem;
+  justify-content: space-between;
+  align-items: center;
+  color: #212121;
+}
+
+.toDoList > div {
+  width: 45%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 0.8rem 0.5rem;
+}
+
+.toDoList__not {
+  background-color: #e0f9b5;
+  width: 10rem;
+  height: 100px;
+}
+
+.toDoList__done {
+  background-color: #d0e8f2;
+  width: 100px;
+  height: 100px;
+}
+
+.toDoList__title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #62959c;
+}
+
+.toDoList__list {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.toDoList__element {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.9;
+  transition: all 1s ease;
+}
+
+#done-toDoList .toDoList__element > span:first-child {
+  opacity: 0.8;
+  text-decoration: line-through;
+}
+
+.toDoList__element:hover {
+  opacity: 1;
+}
+
+.toDoList__element button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  transition: all 1s ease;
+}
+
+.toDoList__element button:hover {
+  transform: scale(1.2);
+}
+
+.toDoList__element .toDoList__delBtn i {
+  font-size: 1rem;
+  color: #ec4646;
+  pointer-events: none;
+}
+
+.toDoList__element .toDoList__swBtn i {
+  font-size: 1rem;
+  color: #00af91;
+  pointer-events: none;
+}
