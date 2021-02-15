@@ -1,5 +1,7 @@
 @import "reset.css";
+@import "index.css";
+@import "toDo.css";
 
-body {
-  background-color: #f2f2f2;
+* {
+  box-sizing: border-box;
 }

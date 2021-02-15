@@ -7,10 +7,40 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <script src="../js/checkInfo.js"></script>
     <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3ba764b9f2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>ToDoList</title>
   </head>
   <body id="index">
-    <h1 class="choice-text">What's your name?</h1>
+    <div class="index__container" id="name-container">
+      <h1>What's your name?</h1>
+      <form class="index__form" id="name-form">
+        <input type="text" placeholder="name" required />
+        <button type="submit">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+    <div class="index__container no-display" id="color-container">
+      <h1>Choose menu's color</h1>
+      <ul class="color__list">
+        <li class="color__red"></li>
+        <li class="color__purple"></li>
+        <li class="color__yellow"></li>
+      </ul>
+      <button type="button">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+    <div class="index__container no-display" id="check-container">
+      <button type="button">
+        Go ToDoList &nbsp;<i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+    <script src="../js/index.js"></script>
   </body>
 </html>
