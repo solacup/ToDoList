@@ -30,7 +30,7 @@ function getInfo() {
 function deleteInfo() {
   localStorage.removeItem(USER);
   localStorage.removeItem(THEME);
-  location.href = "../index.html";
+  location.href = "../";
 }
 
 function init() {
