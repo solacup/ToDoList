@@ -1,10 +1,8 @@
 const NAME = "name";
 const COLOR = "color";
 
-const indexPage =
-  "file:///C:/Users/sol/Desktop/code/ToDoList/index.html";
-const toDoPage =
-  "file:///C:/Users/sol/Desktop/code/ToDoList/html/toDo.html";
+const indexPage = "https://solacup.github.io/ToDoList";
+const toDoPage = "https://solacup.github.io/ToDoList/html/toDo.html";
 
 function checkInfo() {
   const currentUser = localStorage.getItem(NAME);
