@@ -1,7 +1,7 @@
 const NAME = "name";
 const COLOR = "color";
 
-const indexPage = "https://solacup.github.io/ToDoList";
+const indexPage = "https://solacup.github.io/ToDoList/";
 const toDoPage = "https://solacup.github.io/ToDoList/html/toDo.html";
 
 function checkInfo() {
